@@ -1,0 +1,25 @@
+{
+  "name": "vexbot",
+  "version": "1.0.0",
+  "description": "![vexbot](https://user-images.githubusercontent.com/212941/59231505-bb48a900-8b95-11e9-9ed0-acd620feaf76.png)",
+  "main": "index.js",
+  "dependencies": {
+    "popmotion": "^8.6.10",
+    "stylefire": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwkchan/vexbot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lwkchan/vexbot/issues"
+  },
+  "homepage": "https://github.com/lwkchan/vexbot#readme"
+}
