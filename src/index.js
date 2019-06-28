@@ -1,7 +1,7 @@
 import { physics } from 'popmotion';
 import styler from 'stylefire';
 
-const mainEl = document.getElementById('svg-canvas');
+const mainEl = document.querySelector('svg');
 const colors = ['#6007B3', '#FFB33D', '#9323FF', '#08CC4C', '#36B361'];
 
 function getVectorLength({ a, b }) {
@@ -16,7 +16,6 @@ function drawLines() {
     .then(response => response.json())
     .then(data => data)
     .then(({ vectors }) => {
-      generationCounter++;
       const color = colors[Math.floor(Math.random() * colors.length)];
       vectors.forEach(vector => {
         const vectorEl = document.createElementNS('http://www.w3.org/2000/svg', 'line');
