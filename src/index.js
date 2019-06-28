@@ -30,8 +30,7 @@ function drawLines() {
         polygonEl.setAttribute('points', `${vector.a.x}, ${vector.a.y} ${vector.b.x}, ${vector.b.y}`);
 
         const vectorStyler = styler(vectorEl);
-
-        const falling = physics({ acceleration: 300 }).start(v => {
+        const falling = physics({ acceleration: 10 * vector.speed }).start(v => {
           vectorStyler.set({ y1: `${vector.a.y + v}`, y2: `${vector.b.y + v}` });
           if (vectorStyler.get('y1') > 100000) {
             falling.stop();
